@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layout.layout')
 @section('title', 'Welcome')
     
 @section('content')
@@ -107,7 +107,6 @@
                             <i class="fa fa-check text-primary me-2"></i>Home Delivery
                         </div>
                     </div>
-                    <a class="btn btn-primary rounded-pill py-3 px-5" href="">Read More</a>
                 </div>
             </div>
         </div>

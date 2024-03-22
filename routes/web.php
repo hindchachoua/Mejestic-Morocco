@@ -12,7 +12,9 @@ Route::post('/login', [AuthManager::class, 'loginPost'])->name('login.post');
 Route::get('/register', [AuthManager::class, 'register'])->name('register');
 Route::post('/register', [AuthManager::class, 'registerPost'])->name('register.post');
 Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
-
-Route::get('/profile', function () {
-
-});
+Route::get('/about' , function () {
+    return view('about');
+})->name('about');
+Route::get('/products' , function () {
+    return view('product');
+})->name('products');

@@ -37,6 +37,7 @@ class AuthManager extends Controller
     }
 
     function registerPost(Request $request){
+        
         $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users',
@@ -46,6 +47,8 @@ class AuthManager extends Controller
         $data['name'] = $request->name;
         $data['email'] = $request->email;
         $data['password'] = bcrypt($request->password);
+        $data['role_id'] = $request->has('checkbox') ? $request->checkbox : null;
+
         
         $user = User::create($data);
         if(!$user){

@@ -31,7 +31,7 @@
 
     <title>@yield('title')</title>
   </head>
-  <body>
+  <body style="background-color: #ffe6c0">
 @yield('content')
 
 

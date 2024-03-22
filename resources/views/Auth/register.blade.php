@@ -1,4 +1,4 @@
-@extends('layout2')
+@extends('layout.layout2')
 @section('title', 'Register')
     
 @section('content')
@@ -51,7 +51,10 @@
                   <label for="password">Password</label>
               </div>
               <div class="d-flex align-items-center justify-content-between mb-4">
-                  
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkbox" value="2">
+                    <label class="form-check-label" for="exampleCheck1">Operator</label>
+                </div>
                   <a href="">Forgot Password</a>
               </div>
               <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Sign Up</button>
